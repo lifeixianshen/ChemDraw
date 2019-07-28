@@ -36,7 +36,7 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_3">
+   <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QGraphicsView" name="pfdenv">
       <property name="sizePolicy">
@@ -70,6 +70,9 @@
       </property>
       <property name="horizontalScrollBarPolicy">
        <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
       </property>
       <property name="backgroundBrush">
        <brush brushstyle="NoBrush">
@@ -124,7 +127,7 @@
       </property>
       <property name="minimumSize">
        <size>
-        <width>343</width>
+        <width>377</width>
         <height>200</height>
        </size>
       </property>
@@ -181,23 +184,18 @@
             <string>Heat Exchanger</string>
            </attribute>
            <layout class="QGridLayout" name="gridLayout_3">
-            <item row="1" column="1">
-             <widget class="QPushButton" name="pushButton_heater">
+            <item row="4" column="1">
+             <widget class="QLabel" name="label_heater">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string/>
+               <string>Heater</string>
               </property>
-              <property name="icon">
-               <iconset>
-                <normaloff>icons/Heater.png</normaloff>icons/Heater.png</iconset>
-              </property>
-              <property name="iconSize">
-               <size>
-                <width>100</width>
-                <height>100</height>
-               </size>
-              </property>
-              <property name="flat">
-               <bool>true</bool>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
               </property>
              </widget>
             </item>
@@ -224,20 +222,18 @@
               </property>
              </widget>
             </item>
-            <item row="4" column="1">
-             <widget class="QLabel" name="label_heater">
-              <property name="font">
-               <font>
-                <pointsize>10</pointsize>
-               </font>
+            <item row="1" column="3">
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
               </property>
-              <property name="text">
-               <string>Heater</string>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
+             </spacer>
             </item>
             <item row="4" column="2">
              <widget class="QLabel" name="label_cooler">
@@ -254,18 +250,25 @@
               </property>
              </widget>
             </item>
-            <item row="1" column="3">
-             <spacer name="horizontalSpacer">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="pushButton_heater">
+              <property name="text">
+               <string/>
               </property>
-              <property name="sizeHint" stdset="0">
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/Heater.png</normaloff>icons/Heater.png</iconset>
+              </property>
+              <property name="iconSize">
                <size>
-                <width>40</width>
-                <height>20</height>
+                <width>100</width>
+                <height>100</height>
                </size>
               </property>
-             </spacer>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -355,11 +358,69 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="status_lable">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="status_lable">
+        <property name="text">
+         <string>          </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="status_label_2">
+        <property name="text">
+         <string>                 </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="status_label_3">
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#bc13ff;&quot;&gt;ChemDraw  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::RichText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
