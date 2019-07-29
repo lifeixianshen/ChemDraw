@@ -36,88 +36,106 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QGraphicsView" name="pfdenv">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
       <property name="mouseTracking">
        <bool>true</bool>
       </property>
       <property name="tabletTracking">
        <bool>true</bool>
       </property>
-      <property name="acceptDrops">
-       <bool>true</bool>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
       </property>
-      <property name="autoFillBackground">
-       <bool>true</bool>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
       </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="verticalScrollBarPolicy">
-       <enum>Qt::ScrollBarAsNeeded</enum>
-      </property>
-      <property name="horizontalScrollBarPolicy">
-       <enum>Qt::ScrollBarAsNeeded</enum>
-      </property>
-      <property name="sizeAdjustPolicy">
-       <enum>QAbstractScrollArea::AdjustToContents</enum>
-      </property>
-      <property name="backgroundBrush">
-       <brush brushstyle="NoBrush">
-        <color alpha="255">
-         <red>170</red>
-         <green>170</green>
-         <blue>127</blue>
-        </color>
-       </brush>
-      </property>
-      <property name="foregroundBrush">
-       <brush brushstyle="NoBrush">
-        <color alpha="255">
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </brush>
-      </property>
-      <property name="sceneRect">
-       <rectf>
-        <x>0.000000000000000</x>
-        <y>0.000000000000000</y>
-        <width>5000.000000000000000</width>
-        <height>5000.000000000000000</height>
-       </rectf>
-      </property>
-      <property name="dragMode">
-       <enum>QGraphicsView::RubberBandDrag</enum>
-      </property>
-      <property name="transformationAnchor">
-       <enum>QGraphicsView::AnchorUnderMouse</enum>
-      </property>
-      <property name="resizeAnchor">
-       <enum>QGraphicsView::AnchorUnderMouse</enum>
-      </property>
-      <property name="viewportUpdateMode">
-       <enum>QGraphicsView::FullViewportUpdate</enum>
-      </property>
-      <property name="optimizationFlags">
-       <set>QGraphicsView::DontClipPainter</set>
-      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QGraphicsView" name="pfdenv">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAsNeeded</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAsNeeded</enum>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="backgroundBrush">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>170</red>
+            <green>170</green>
+            <blue>127</blue>
+           </color>
+          </brush>
+         </property>
+         <property name="foregroundBrush">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </property>
+         <property name="sceneRect">
+          <rectf>
+           <x>0.000000000000000</x>
+           <y>0.000000000000000</y>
+           <width>5000.000000000000000</width>
+           <height>5000.000000000000000</height>
+          </rectf>
+         </property>
+         <property name="dragMode">
+          <enum>QGraphicsView::RubberBandDrag</enum>
+         </property>
+         <property name="transformationAnchor">
+          <enum>QGraphicsView::AnchorUnderMouse</enum>
+         </property>
+         <property name="resizeAnchor">
+          <enum>QGraphicsView::AnchorUnderMouse</enum>
+         </property>
+         <property name="viewportUpdateMode">
+          <enum>QGraphicsView::FullViewportUpdate</enum>
+         </property>
+         <property name="optimizationFlags">
+          <set>QGraphicsView::DontClipPainter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
-    <item>
+    <item row="1" column="0">
      <widget class="QDockWidget" name="Icon_window">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -303,7 +321,7 @@
       </widget>
      </widget>
     </item>
-    <item>
+    <item row="2" column="0">
      <widget class="QDockWidget" name="log_window">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -357,12 +375,12 @@
       </widget>
      </widget>
     </item>
-    <item>
+    <item row="3" column="0">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QLabel" name="status_lable">
         <property name="text">
-         <string>          </string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -382,7 +400,7 @@
       <item>
        <widget class="QLabel" name="status_label_2">
         <property name="text">
-         <string>                 </string>
+         <string/>
         </property>
        </widget>
       </item>

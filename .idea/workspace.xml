@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6906cd39-0b55-4d8a-a20c-000be077aac4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Python Ref.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Python Ref.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Python Ref.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Python Ref.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Python Ref.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/SS/Screenshot_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/SS/layout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/SS/layout_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/SS/layout_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/about.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Heater.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PFD.py" beforeDir="false" afterPath="$PROJECT_DIR$/PFD.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PFDui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/PFDui.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydesign.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydesign.py" afterDir="false" />
@@ -172,6 +160,8 @@
       <workItem from="1564242077219" duration="2440000" />
       <workItem from="1564248204264" duration="892000" />
       <workItem from="1564288863948" duration="11344000" />
+      <workItem from="1564411805332" duration="3577000" />
+      <workItem from="1564416988152" duration="3477000" />
     </task>
     <servers />
   </component>
@@ -195,7 +185,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PFD$PFD.coverage" NAME="PFD Coverage Results" MODIFIED="1564300795796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PFD$PFD.coverage" NAME="PFD Coverage Results" MODIFIED="1564420849509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PFD$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1564214153520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/PFD$mainApp.coverage" NAME="mainApp Coverage Results" MODIFIED="1564219482602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../OMChemSimGUI" />
     <SUITE FILE_PATH="coverage/PFD$main.coverage" NAME="main Coverage Results" MODIFIED="1564136648835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../fbs-tutorial" />
