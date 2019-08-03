@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QDialog, QApplication, QMainWindow, QWidget
 from PyQt5 import uic, QtCore, QtWidgets, QtGui
-from mydesign import Ui_ChemDraw  # to genrate this file run this in cmd--> pyuic5 E:/PFD/PFDui.ui -o E:/PFD/mydesign.py
+from mydesign import Ui_ChemDraw  # to generate this file run this in cmd--> pyuic5 E:/PFD/PFDui.ui -o E:/PFD/mydesign.py
 import sys
 import time
 
@@ -45,55 +45,35 @@ class mywindow(QMainWindow):
         global H_pos
         H_pos = H
 
-    def pfd_mousepress(self, e):
-        global x, y
-        x = e.x()
-        y = e.y()
-        global UO
-        global icon_select
-        if icon_select == 1:
-            self.ui.log_pan.append(
-                "[" + str(time.strftime("%H:%M:%S", time.localtime())) + "] " + str(UO) + " are dropped")
-            icon_select = 0
-            self.addicon()
-        else:
-            self.ui.log_pan.append(
-                "[" + str(time.strftime("%H:%M:%S", time.localtime())) + "] " + "Please Select any Unit Operation")
-
     def addicon(self):
         if UO == "Heater":
             add_icon = self.scene.addPixmap(QtGui.QPixmap("icons\Heater.png"))
         if UO == "Cooler":
             add_icon = self.scene.addPixmap(QtGui.QPixmap("icons\Cooler.png"))
-        add_icon.setPos(int(x + H_pos), int(y + V_pos))
+        add_icon.setPos(int(50 + H_pos), int(50 + V_pos))
         add_icon.setFlag(QtWidgets.QGraphicsItem.ItemIsMovable, True)
         add_icon.setFlag(QtWidgets.QGraphicsItem.ItemIsSelectable, True)
-
-    def pfd_mousemove(self, e):
-        x = e.x()
-        y = e.y()
-        self.ui.status_lable.setText(str("x:") + str(x) + "  " + "y:" + str(y))
+        add_icon.setAcceptHoverEvents(True)
+        add_icon.setAcceptTouchEvents(True)
 
     # definition for icon menu
     def heater_main(self):
-        self.ui.pfdenv.mousePressEvent = self.pfd_mousepress
-        self.ui.pfdenv.mouseMoveEvent = self.pfd_mousemove
         self.ui.log_pan.append(
             "[" + str(time.strftime("%H:%M:%S", time.localtime())) + "] " + "Heater is ready to drop")
         global UO
         global icon_select
         UO = "Heater"
         icon_select = 1
+        self.addicon()
 
     def cooler_main(self):
-        self.ui.pfdenv.mousePressEvent = self.pfd_mousepress
-        self.ui.pfdenv.mouseMoveEvent = self.pfd_mousemove
         self.ui.log_pan.append(
             "[" + str(time.strftime("%H:%M:%S", time.localtime())) + "] " + "Cooler is ready to drop")
         global UO
         global icon_select
         UO = "Cooler"
         icon_select = 1
+        self.addicon()
 
     # menubar action
     def About(self):

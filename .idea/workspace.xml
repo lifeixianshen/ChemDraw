@@ -4,14 +4,26 @@
     <list default="true" id="6906cd39-0b55-4d8a-a20c-000be077aac4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PFD.py" beforeDir="false" afterPath="$PROJECT_DIR$/PFD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFDui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/PFDui.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydesign.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydesign.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,7 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OMChemSimGUI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -161,7 +173,11 @@
       <workItem from="1564248204264" duration="892000" />
       <workItem from="1564288863948" duration="11344000" />
       <workItem from="1564411805332" duration="3577000" />
-      <workItem from="1564416988152" duration="3477000" />
+      <workItem from="1564416988152" duration="3840000" />
+      <workItem from="1564586773818" duration="975000" />
+      <workItem from="1564760975256" duration="2241000" />
+      <workItem from="1564809890265" duration="3762000" />
+      <workItem from="1564814011467" duration="1567000" />
     </task>
     <servers />
   </component>
@@ -186,6 +202,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PFD$PFD.coverage" NAME="PFD Coverage Results" MODIFIED="1564420849509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ChemDraw$PFD.coverage" NAME="PFD Coverage Results" MODIFIED="1564815549685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PFD$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1564214153520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/PFD$mainApp.coverage" NAME="mainApp Coverage Results" MODIFIED="1564219482602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../OMChemSimGUI" />
     <SUITE FILE_PATH="coverage/PFD$main.coverage" NAME="main Coverage Results" MODIFIED="1564136648835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../fbs-tutorial" />
